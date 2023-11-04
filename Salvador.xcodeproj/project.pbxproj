@@ -13,6 +13,10 @@
 		B26947CA2AF2118E005B04B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26947C82AF2118E005B04B3 /* Main.storyboard */; };
 		B26947CC2AF21193005B04B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26947CB2AF21193005B04B3 /* Assets.xcassets */; };
 		B26947CF2AF21193005B04B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26947CD2AF21193005B04B3 /* LaunchScreen.storyboard */; };
+		B26947D72AF6642A005B04B3 /* SamplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26947D62AF6642A005B04B3 /* SamplePlayer.swift */; };
+		B26948292AF6703B005B04B3 /* useful_guitar_chords_60bpm.wav in Resources */ = {isa = PBXBuildFile; fileRef = B26948252AF66C27005B04B3 /* useful_guitar_chords_60bpm.wav */; };
+		B269482B2AF671A1005B04B3 /* anthem_drums_71bpm.wav in Resources */ = {isa = PBXBuildFile; fileRef = B269482A2AF671A1005B04B3 /* anthem_drums_71bpm.wav */; };
+		B269482D2AF67246005B04B3 /* urban_rnb_chords.wav in Resources */ = {isa = PBXBuildFile; fileRef = B269482C2AF67246005B04B3 /* urban_rnb_chords.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B26947CB2AF21193005B04B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B26947CE2AF21193005B04B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B26947D02AF21193005B04B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26947D62AF6642A005B04B3 /* SamplePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePlayer.swift; sourceTree = "<group>"; };
+		B26948252AF66C27005B04B3 /* useful_guitar_chords_60bpm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = useful_guitar_chords_60bpm.wav; sourceTree = "<group>"; };
+		B269482A2AF671A1005B04B3 /* anthem_drums_71bpm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = anthem_drums_71bpm.wav; sourceTree = "<group>"; };
+		B269482C2AF67246005B04B3 /* urban_rnb_chords.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = urban_rnb_chords.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +68,23 @@
 				B26947C42AF2118E005B04B3 /* SceneDelegate.swift */,
 				B26947C62AF2118E005B04B3 /* ViewController.swift */,
 				B26947C82AF2118E005B04B3 /* Main.storyboard */,
+				B26947D62AF6642A005B04B3 /* SamplePlayer.swift */,
+				B26947FE2AF66528005B04B3 /* Resources */,
 				B26947CB2AF21193005B04B3 /* Assets.xcassets */,
 				B26947CD2AF21193005B04B3 /* LaunchScreen.storyboard */,
 				B26947D02AF21193005B04B3 /* Info.plist */,
 			);
 			path = Salvador;
+			sourceTree = "<group>";
+		};
+		B26947FE2AF66528005B04B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B269482C2AF67246005B04B3 /* urban_rnb_chords.wav */,
+				B269482A2AF671A1005B04B3 /* anthem_drums_71bpm.wav */,
+				B26948252AF66C27005B04B3 /* useful_guitar_chords_60bpm.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +145,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26948292AF6703B005B04B3 /* useful_guitar_chords_60bpm.wav in Resources */,
+				B269482B2AF671A1005B04B3 /* anthem_drums_71bpm.wav in Resources */,
+				B269482D2AF67246005B04B3 /* urban_rnb_chords.wav in Resources */,
 				B26947CF2AF21193005B04B3 /* LaunchScreen.storyboard in Resources */,
 				B26947CC2AF21193005B04B3 /* Assets.xcassets in Resources */,
 				B26947CA2AF2118E005B04B3 /* Main.storyboard in Resources */,
@@ -138,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26947D72AF6642A005B04B3 /* SamplePlayer.swift in Sources */,
 				B26947C72AF2118E005B04B3 /* ViewController.swift in Sources */,
 				B26947C32AF2118E005B04B3 /* AppDelegate.swift in Sources */,
 				B26947C52AF2118E005B04B3 /* SceneDelegate.swift in Sources */,
@@ -293,8 +317,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +327,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.YesVladess.Salvador;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +349,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +359,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.YesVladess.Salvador;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
