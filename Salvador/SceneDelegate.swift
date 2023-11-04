@@ -1,6 +1,11 @@
-//
-//  Copyright (c) 2011-2022, Zingaya, Inc. All rights reserved.
-//
+/*
+ *  SceneDelegate.swift
+ *  Salvador
+ *
+ *  Created by Vlad Kononenko on 04.11.2023
+ *  All rights reserved.
+ *
+ */
 
 
 import UIKit
