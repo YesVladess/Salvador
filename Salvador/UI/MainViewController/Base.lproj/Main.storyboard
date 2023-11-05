@@ -18,57 +18,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MWt-i0-Izj">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="10" y="49" width="373" height="759"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-wI-eRG">
-                                        <rect key="frame" x="33.666666666666657" y="0.0" width="326" height="30"/>
+                                        <rect key="frame" x="55" y="0.0" width="263" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfj-T5-Tcn">
-                                                <rect key="frame" x="0.0" y="0.0" width="95.333333333333329" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="74.333333333333329" height="50"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Гитара"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Guitar"/>
                                                 <connections>
                                                     <action selector="tapGuitarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSK-4i-938"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8k-58-cdc">
-                                                <rect key="frame" x="115.33333333333334" y="0.0" width="95.333333333333343" height="30"/>
+                                                <rect key="frame" x="94.333333333333343" y="0.0" width="74.333333333333343" height="50"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Ударные"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Drums"/>
                                                 <connections>
                                                     <action selector="tapDrumsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H7E-b4-okd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFa-ha-L3y">
-                                                <rect key="frame" x="230.66666666666666" y="0.0" width="95.333333333333343" height="30"/>
+                                                <rect key="frame" x="188.66666666666666" y="0.0" width="74.333333333333343" height="50"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Клавиши"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Synth"/>
                                                 <connections>
                                                     <action selector="tapSynthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vcr-ab-tDe"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="teD-Rw-H7E"/>
+                                            <constraint firstAttribute="height" constant="50" id="teD-Rw-H7E"/>
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhr-UW-CzX" customClass="SetupSampleView" customModule="Salvador" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40" width="393" height="628"/>
+                                        <rect key="frame" x="0.0" y="60" width="373" height="579"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5M-sc-Ra1">
-                                        <rect key="frame" x="0.0" y="678" width="393" height="31"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="kVR-Kw-QaE"/>
+                                            <constraint firstAttribute="width" constant="373" id="fjm-7J-yNF"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wLZ-bo-YEs">
-                                        <rect key="frame" x="0.0" y="719" width="393" height="40"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5M-sc-Ra1">
+                                        <rect key="frame" x="0.0" y="649" width="373" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="373" id="ZjE-G6-6Ks"/>
+                                            <constraint firstAttribute="height" constant="60" id="kVR-Kw-QaE"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wLZ-bo-YEs">
+                                        <rect key="frame" x="63.000000000000014" y="719" width="247.33333333333337" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URk-J6-MHJ" userLabel="Layers">
-                                                <rect key="frame" x="0.0" y="0.0" width="243" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="OoP-M2-Lbb"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Layers"/>
                                                 <connections>
@@ -76,10 +84,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrN-ba-I97" userLabel="Mic">
-                                                <rect key="frame" x="258" y="0.0" width="35" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="35" id="Wj2-PT-hhu"/>
-                                                </constraints>
+                                                <rect key="frame" x="94" y="0.0" width="42" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="mic"/>
                                                 <connections>
@@ -87,52 +93,49 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJy-hi-FnA" userLabel="Record">
-                                                <rect key="frame" x="308" y="0.0" width="35" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="35" id="Q0O-Tm-g4R"/>
-                                                </constraints>
+                                                <rect key="frame" x="156" y="0.0" width="36" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="record"/>
+                                                <connections>
+                                                    <action selector="tapCreateMix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ncI-WF-cca"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttc-Tr-og0" userLabel="Play">
-                                                <rect key="frame" x="358" y="0.0" width="35" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="35" id="wfW-lC-DuH"/>
-                                                </constraints>
+                                                <rect key="frame" x="212" y="0.0" width="35.333333333333343" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="play"/>
+                                                <connections>
+                                                    <action selector="tapPlayMix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdq-VA-mW1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="OSD-hg-6Xj"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="W5M-sc-Ra1" firstAttribute="leading" secondItem="MWt-i0-Izj" secondAttribute="leading" id="AqX-rC-YVR"/>
-                                    <constraint firstAttribute="trailing" secondItem="Lhr-UW-CzX" secondAttribute="trailing" id="PcU-Qw-WcR"/>
-                                    <constraint firstAttribute="trailing" secondItem="W5M-sc-Ra1" secondAttribute="trailing" id="fHM-Kc-DL5"/>
-                                    <constraint firstItem="Lhr-UW-CzX" firstAttribute="leading" secondItem="MWt-i0-Izj" secondAttribute="leading" id="rrJ-O6-rRP"/>
-                                    <constraint firstAttribute="trailing" secondItem="wLZ-bo-YEs" secondAttribute="trailing" id="uxF-hG-Er2"/>
-                                    <constraint firstItem="wLZ-bo-YEs" firstAttribute="leading" secondItem="MWt-i0-Izj" secondAttribute="leading" id="vPJ-lG-Aa4"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="MWt-i0-Izj" secondAttribute="leading" id="0OY-ui-g1e"/>
-                            <constraint firstItem="MWt-i0-Izj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2ZG-TQ-6fX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MWt-i0-Izj" secondAttribute="bottom" id="6Ey-sR-2ja"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MWt-i0-Izj" secondAttribute="trailing" id="P1k-YS-Tiw"/>
+                            <constraint firstItem="MWt-i0-Izj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="0OY-ui-g1e"/>
+                            <constraint firstItem="MWt-i0-Izj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-10" id="2ZG-TQ-6fX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MWt-i0-Izj" secondAttribute="bottom" constant="10" id="6Ey-sR-2ja"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MWt-i0-Izj" secondAttribute="trailing" constant="10" id="P1k-YS-Tiw"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomButtons" destination="wLZ-bo-YEs" id="Bva-0D-tIs"/>
                         <outlet property="layersButton" destination="URk-J6-MHJ" id="Xt7-2g-wcu"/>
-                        <outlet property="sampleVisualizationView" destination="W5M-sc-Ra1" id="EbT-o6-KhB"/>
-                        <outlet property="setupSampleView" destination="Lhr-UW-CzX" id="8WK-I0-2d4"/>
+                        <outlet property="micButton" destination="KrN-ba-I97" id="oYH-h0-u4O"/>
+                        <outlet property="playButton" destination="Ttc-Tr-og0" id="5ee-7e-Mbg"/>
+                        <outlet property="recordButton" destination="fJy-hi-FnA" id="rea-KE-Ndh"/>
+                        <outlet property="sampleVisualizationView" destination="W5M-sc-Ra1" id="jdW-zT-NjU"/>
+                        <outlet property="setupSampleView" destination="Lhr-UW-CzX" id="PSP-Ms-TrG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -144,17 +147,11 @@
         <image name="mic" width="18" height="18"/>
         <image name="play" width="12" height="13"/>
         <image name="record" width="12" height="12"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

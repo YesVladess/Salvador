@@ -77,8 +77,7 @@
 			children = (
 				B2151D432AF7D38800B99FEA /* LayersViewController.swift */,
 				B2151D442AF7D38800B99FEA /* LayersViewController.xib */,
-				B2151D4B2AF7E3AE00B99FEA /* LayerTableViewCell.swift */,
-				B2151D4C2AF7E3AE00B99FEA /* LayerTableViewCell.xib */,
+				B2BDEC6C2AF825D500C86D5C /* LayerTableViewCell */,
 			);
 			path = LayersViewController;
 			sourceTree = "<group>";
@@ -132,6 +131,15 @@
 				B26948252AF66C27005B04B3 /* useful_guitar_chords_60bpm.wav */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2BDEC6C2AF825D500C86D5C /* LayerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B2151D4B2AF7E3AE00B99FEA /* LayerTableViewCell.swift */,
+				B2151D4C2AF7E3AE00B99FEA /* LayerTableViewCell.xib */,
+			);
+			path = LayerTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
