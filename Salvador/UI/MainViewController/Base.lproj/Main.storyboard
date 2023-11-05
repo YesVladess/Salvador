@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Salvador" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Salvador" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
                                             <constraint firstAttribute="height" constant="30" id="teD-Rw-H7E"/>
                                         </constraints>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhr-UW-CzX">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhr-UW-CzX" customClass="SetupSampleView" customModule="Salvador" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="40" width="393" height="628"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -70,7 +70,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URk-J6-MHJ" userLabel="Layers">
                                                 <rect key="frame" x="0.0" y="0.0" width="243" height="40"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Слои"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Layers"/>
+                                                <connections>
+                                                    <action selector="tapLayersButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="983-jc-cOv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrN-ba-I97" userLabel="Mic">
                                                 <rect key="frame" x="258" y="0.0" width="35" height="40"/>
@@ -126,7 +129,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="setupSampleView" destination="Lhr-UW-CzX" id="3eD-lO-iPf"/>
+                        <outlet property="bottomButtons" destination="wLZ-bo-YEs" id="Bva-0D-tIs"/>
+                        <outlet property="layersButton" destination="URk-J6-MHJ" id="Xt7-2g-wcu"/>
+                        <outlet property="sampleVisualizationView" destination="W5M-sc-Ra1" id="EbT-o6-KhB"/>
+                        <outlet property="setupSampleView" destination="Lhr-UW-CzX" id="8WK-I0-2d4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

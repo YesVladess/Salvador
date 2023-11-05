@@ -63,7 +63,7 @@ dist/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
-.swiftpm/xcode/xcuserdata/*
+*xcuserdata
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
